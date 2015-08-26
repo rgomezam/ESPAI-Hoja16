@@ -19,7 +19,7 @@ public:
 	string getApellido1(){return apellido1;}
 	string getApellido2(){return apellido2;}
 	int getPlanta(){return planta;}
-	string getProfesion(){return empleo;}
+	virtual string getProfesion(){return empleo;}   //Este virtual es muy importante!
 	float getSalida(){return salida;}
 	void setEntrada(float entrada);
 	void setSalida(float salida);
