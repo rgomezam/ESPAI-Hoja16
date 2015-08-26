@@ -121,7 +121,7 @@ void GestorHospital::listadoTotal() {
 	for (int m=0;m<400;m++){
 					if (arrPersonal[m]!=NULL){
 						cout << m << ")" << arrPersonal[m]->getNombre() << " " << arrPersonal[m]->getApellido1() << " " << arrPersonal[m]->getApellido2();
-					     cout << arrPersonal[m]->getProfesion() <<  " , planta " << arrPersonal[m]->getPlanta() << " , horarios:";
+					     cout << ", " << arrPersonal[m]->getProfesion() <<  " , planta " << arrPersonal[m]->getPlanta() << " , horarios:";
 							arrPersonal[m]->getHorarios();
 							cout<< endl;
 					}
@@ -138,7 +138,7 @@ void GestorHospital::personalenPlanta() {
 	for (int m=0;m<400;m++){
 					if (arrPersonal[m]!=NULL  && arrPersonal[m]->getPlanta()==pl){
 						cout << m << ")" << arrPersonal[m]->getNombre() << " " << arrPersonal[m]->getApellido1() << " " << arrPersonal[m]->getApellido2();
-					     cout << arrPersonal[m]->getProfesion() <<  " , planta " << arrPersonal[m]->getPlanta() << " , horarios:";
+					     cout << ", " << arrPersonal[m]->getProfesion() <<  " , planta " << arrPersonal[m]->getPlanta() << " , horarios:";
 						arrPersonal[m]->getHorarios();
 						cout<< endl;
 					}
@@ -149,7 +149,7 @@ void GestorHospital::personalActivo() {
 		for (int m=0;m<400;m++){
 						if (arrPersonal[m]!=NULL  && arrPersonal[m]->getSalida()!=0){
 							cout << m << ")" << arrPersonal[m]->getNombre() << " " << arrPersonal[m]->getApellido1() << " " << arrPersonal[m]->getApellido2();
-						     cout << arrPersonal[m]->getProfesion() <<  " , planta " << arrPersonal[m]->getPlanta() << " , horarios:";
+						     cout << ", " << arrPersonal[m]->getProfesion() <<  " , planta " << arrPersonal[m]->getPlanta() << " , horarios:";
 							arrPersonal[m]->getHorarios();
 							cout<< endl;
 						}
